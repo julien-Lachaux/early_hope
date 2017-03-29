@@ -1,0 +1,41 @@
+.carrousel {
+    height: 500px;
+    width: 80%;
+    margin: -20px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+.carrousel img {
+    height: 350px;
+    background-color: azure;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.btnDroit { 
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url(next.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 10%;
+}
+
+.btnGauche {    
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url(back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 10%;
+}
+
+.hidden {
+    display: none;
+}

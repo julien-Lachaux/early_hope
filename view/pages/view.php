@@ -1,0 +1,1 @@
+<h1><?php echo $Categorie->name; ?></h1>

@@ -1,0 +1,466 @@
+/* GLOBAL --clearfix
+=========================*/
+
+body {
+    margin: 0px;
+}
+
+.web-flux {
+}
+
+/* GLOBAL --color
+=========================*/
+
+.light-brown { background-color: #e4d6bf; }
+.brown { background-color: #ab9477; }
+.light-saumon { background-color: #f4ebdb; }
+.saumon-glass { background-color: rgba(244, 235, 206, 0.50); }
+.light-blue { background-color: #c7dcdb; }
+.blue { background-color: #aac7cd; }
+.light-green { background-color: #c0ceb2; }
+.green { background-color: #8aa989; }
+.mauve { background-color: #e7d9d9; }
+
+/* GLOBAL --font
+=========================*/
+
+@font-face {
+    font-family: 'gravity-light';
+    src: url(/dorea/font/Gravity/Gravity-Light.otf);
+}
+
+body {
+    font-family: 'gravity-light';
+}
+
+/* La navbar
+=========================*/
+
+nav {
+    height: 70px;
+    width: 90%;
+    padding-right: 10%;
+}
+
+nav a {
+    color: #343434;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: space-around;
+    padding-top: 25px;
+    margin: 0px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.logo {
+    background-image: url(/dorea/webroot/img/contents/icons/coeur.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+/* Le header
+=========================*/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 830px;
+    background-image: url(/dorea/webroot/img/contents/dorea/nature.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+header img {
+    position: relative;
+    width: 60%;
+    margin: 150px 20% 50px 20%;
+}
+header .title {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+}
+
+/* SECTION : GLOBAL SPEC
+=========================*/
+
+section {
+    width: 80%;
+    padding: 0 10%;
+}
+
+.section-title {
+}
+
+.section-title h3 {
+    display: inline-block;
+    font-size: 2em;
+    margin: 70px 0;
+}
+
+.section-title h3::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 1px;
+    border-bottom: 1px solid #464646;
+    top: 20px;
+}
+
+.section-content {
+    padding-bottom: 70px;
+}
+
+/* SECTION : statistiques
+=========================*/
+
+.statistiques .section-content {
+    padding: 35px 0 0 0 !important;
+}
+
+.statistiques .section-content .circles-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+}
+
+.stat-circle span{
+    text-align: center;
+    position: relative;
+    display: block;
+    font-size: 1.9em;
+    top: 45px;
+    width: 200px;
+    left: 25px;
+}
+
+.statistiques .stat-circle {
+    
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+}
+
+.statistiques .stat-circle:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 15px rgba(244, 235, 206, 0.65);
+    border-radius: 50%;
+    line-height: 250px;
+  }
+
+.statistiques .stat-circle:after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 15px rgba(54, 108, 58, 0.68);
+    border-radius: 50%;
+    line-height: 250px;
+    clip: rect(auto auto auto 125px);
+  }
+
+.statistiques .donation {
+    margin: 55px auto 0 auto;
+    text-align: center;
+}
+
+.statistiques .donation .total {
+    font-size: 1.25em;
+    border: 5px solid #ab9477;
+    width: 150px;
+    padding: 15px;
+}
+
+/* SECTION : decouverte menu
+=========================*/
+
+.decouverte .section-content{
+    width: 80%;
+    margin: 50px 10% 0 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.decouverte .card {
+    position: relative;
+    width: 35%;
+    height: 250px;
+    margin: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.decouverte .card-text {
+    width: 200px;
+    padding: 0 15px;
+    font-size: 1.25em;
+}
+
+.decouverte .card-img {
+    height: 150px;
+    padding: 0 15px;
+}
+
+.decouverte .actu .card-img{
+    position: relative;
+    height: 75px;
+    top: -60px;
+    left: -25px;
+}
+
+.decouverte .actu .card-text {
+    position: relative;
+    top: -60px;
+    left: -25px;
+}
+
+.decouverte .actu .card-descr {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    overflow-y: hidden;
+    margin: 0 auto;
+    top: 110px;
+    
+}
+
+/* SECTION : actualites
+=========================*/
+
+/* SECTION : demo
+=========================*/
+
+.demo .section-content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.demo .demo-btn {
+    text-align: center;
+    background-color: #ab9477;
+    font-size: 2em;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.demo .demo-btn span {
+    position: relative;
+    width: 150px;
+    top: 65px;
+}
+
+.demo .demo-descr {
+    width: 500px;
+    margin-left: 15px;
+}
+
+/* SECTION : temoignage
+=========================*/
+
+.temoignage .section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+.temoignage .card {
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.temoignage .card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.temoignage .card .card-title {
+    display: block;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.temoignage .card .card-img {
+    border-radius: 50%;
+    position: relative;
+    width: 100px;
+    margin: 0 75px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.temoignage .card .card-text {
+    width: 200px;
+    height: 100px;
+    margin: 0 25px;
+    padding: 10px 0 0 0;
+    text-align: justify;
+    overflow-y: hidden;
+}
+
+/* SECTION : join us
+=========================*/
+
+.join-us .section-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.join-us .right-content ul{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    margin: 0px;
+}
+
+.join-us .btn {
+    width: 350px;
+    height: 75px;
+    background-color: #ab9477;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.join-us .btn:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.join-us .icon {
+    margin: 15px 0;
+}
+
+.join-us .icon::before {
+    position: relative;
+    top: 10px;
+    left: -20px;
+}
+
+.join-us .adress::before {
+    content: url(/dorea/webroot/img/contents/icons/menu/maps.png);
+    padding-left: 5px !important;
+}
+
+.join-us .mail::before {
+    content: url(/dorea/webroot/img/contents/icons/menu/at.png);
+}
+
+.join-us .phone::before {
+    content: url(/dorea/webroot/img/contents/icons/menu/call-answer.png);
+    top: 10px !important;
+    padding-left: 5px !important;
+}
+
+/* le footer
+=========================*/
+
+footer {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .left-content ul {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin: 0;
+    width: 250px;
+    transform: translateX(-100px);
+}
+
+footer .left-content ul li {
+    margin: 30px 0;
+}
+
+footer .right-content {
+    transform: translateY(-20px);   
+}
+
+footer .right-content p {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+
+footer .right-content .social-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 700px;
+}
+
+footer .right-content .social-icon {
+    background-color: #f4ebce;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .right-content .social-icon::after {
+    content: '/Dorea';
+    display: block;
+    color: #343434;
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+footer .right-content .social-icon img {
+    height: 50px;
+    margin: 15px 0 0 0;
+}
